@@ -1,11 +1,13 @@
 import {} from 'react'
 import '../src/main'
 
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 
 function App() {
   return (
     <>
+      <Navbar />
       <Home />    
     </>
   )

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: url(../assets/bg-html.jpg);
+    background-color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 30px 0;
+    z-index: 100;
+}
+.navbar{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2em;
+    color: white;
+    pointer-events: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #333;
+    color: white;
+}
+@media (max-width: 768px) {
+    #text {
+        font-size: 8vw;
+    }
+
+    .sec h2 {
+        font-size: 6vw;
+    }
+
+    .sec p {
+        font-size: 4vw;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #text {
+        font-size: 10vw;
+    }
+
+    .sec h2 {
+        font-size: 8vw;
+    }
+
+    .sec p {
+        font-size: 5vw;
+    }
+    .section-text{
+        position: absolute;
+        max-width: 480px;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 0 40px;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        padding: 30px 0;
+        z-index: 100;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+}
