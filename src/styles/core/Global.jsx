@@ -2,7 +2,7 @@
 
 const Global = () => {
   return (
-    <header>
+      <header>
       <div className="navbar">
         <h2 className="logo">logo</h2>
         <nav className="navigation">
@@ -12,7 +12,6 @@ const Global = () => {
           <a href="/contact" id="contact">Contact</a>
         </nav>
       </div>
-    
   </header>
   )
 }

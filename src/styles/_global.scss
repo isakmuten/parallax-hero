@@ -6,10 +6,13 @@
 }
 
 body {
-    background: url(../assets/bg-html.jpg);
-    background-color: #ffffff;
-    min-height: 100vh;
-    overflow-x: hidden;
+    background: url(../assets/bg-frame.png) repeat center;
+    background-position: calc(50% - 23px) center; 
+    background-attachment: absolute;
+    background-size: cover; 
+    background-color: #333;
+    min-height: 100vh; 
+
 }
 
 header {
