@@ -10,11 +10,13 @@ const Home = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
 
-        document.querySelector('.hero-sky').style.transform = `translateY(${(scrollPosition * 0.5) / windowHeight * 100}vh)`;
-        document.querySelector('.hero-mountains').style.transform = `translateY(${(scrollPosition * 0.3) / windowHeight * 100}vh)`;
-        document.querySelector('.hero-ocean').style.transform = `translateY(${(scrollPosition * 0.0) / windowHeight * 100}vh)`;
-        document.querySelector('.section-text').style.transform = `translateY(${(scrollPosition * 0.5) / windowHeight * 100}vh)`;
+      document.querySelector('.hero-sky').style.transform = `translateY(${(scrollPosition * 0.5) / windowHeight * 100}vh)`;
+      document.querySelector('.hero-mountains').style.transform = `translateY(${(scrollPosition * 0.3) / windowHeight * 100}vh)`;
+      document.querySelector('.hero-ocean').style.transform = `translateY(${(scrollPosition * 0.0) / windowHeight * 100}vh)`;
+      document.querySelector('.section-text').style.transform = `translateY(${(scrollPosition * 0.5) / windowHeight * 100}vh)`;
     };
+
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
 
@@ -33,18 +35,16 @@ const Home = () => {
         </div>
 
         <div className='section-text'>
-        <h2 id="text">Parallax Website</h2>
+          <h2 id="text">Parallax Website</h2>
         </div>
-      
-      
       </section>
+
       <section className="sec">
         <div className="image-container-2">
           <img src={HeroSecondViewport} alt="second-viewport" className="viewport-two" />
         </div>
-        {/* <h2>Parallax Scrolling Website</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. [...]</p> */}
       </section> 
+
     </main>
   );
 };
